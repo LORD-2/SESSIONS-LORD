@@ -176,7 +176,7 @@ async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: 
         string_session = client.session.save()
     else:
         string_session = await client.export_session_string()
-    text = f"**✇︙ هذه هي جلسة {ty} الخاصة بك** \n\n`{string_session}` \n\n✇︙ **تم استخراج الجلسة بواسطة سورس ايـرثـون @EIRTHON \n✇︙ لا تقوم بمشاركة الجلسة مع الآخرين لـعدم اختراق حسابك الشخصي او حذفه\n✇︙ ولا تنسى الانضمام لـقناة التصاميم @EIRUX ♥"
+    text = f"**✇︙ هذه هي جلسة {ty} الخاصة بك** \n\n`{string_session}` \n\n✇︙ **تم استخراج الجلسة بواسطة سورس لورد @M_R_ZC \n✇︙ لا تقوم بمشاركة الجلسة مع الآخرين لـعدم اختراق حسابك الشخصي او حذفه\n✇︙ ولا تنسى الانضمام لـقـنـاتي الـخـاصـه @OOOJ30 ♥"
     try:
         if not is_bot:
             await client.send_message("me", text)
