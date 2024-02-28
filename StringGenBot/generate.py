@@ -185,7 +185,7 @@ async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: 
     except KeyError:
         pass
     await client.disconnect()
-    await bot.send_message(msg.chat.id, " تم انشاء جلستك بنجاح ✅ \nيرجى التحقق من رسائلك المحفوظة للحصول عليها !\n✇︙ **تم الاستخراج بواسطة سورس ايـرثـون**".format("تـيـلـثـون" if telethon else "بـايـروجـرام"))
+    await bot.send_message(msg.chat.id, " تم انشاء جلستك بنجاح ✅ \nيرجى التحقق من رسائلك المحفوظة للحصول عليها !\n✇︙ **تم الاستخراج بواسطة سورس لـورد**".format("تـيـلـثـون" if telethon else "بـايـروجـرام"))
 
 
 async def cancelled(msg):
